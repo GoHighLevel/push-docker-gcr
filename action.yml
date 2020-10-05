@@ -12,7 +12,7 @@ inputs:
     required: true
   image_tag:
     description: 'Docker Image Tag'
-    required: true
+    default: $GITHUB_SHA
 runs:
   using: 'docker'
   image: 'Dockerfile'
