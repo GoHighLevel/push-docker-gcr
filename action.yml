@@ -10,9 +10,6 @@ inputs:
   image_name:
     description: 'Docker Image Name'
     required: true
-  image_tag:
-    description: 'Docker Image Tag'
-    default: $GITHUB_SHA
 runs:
   using: 'docker'
   image: 'Dockerfile'
